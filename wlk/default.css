@@ -1,0 +1,165 @@
+*{
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin-left:0;
+    margin-right:0;
+}
+
+#canvas {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+
+.GuildName {
+    text-align: center;
+    font-weight:bold;
+    border-bottom: solid white;
+}
+
+.toolBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 0;
+    border-bottom: solid white;
+    font-size: 14px;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.bottom{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
+    width: 100%;
+    
+}
+.bottomBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    border-top: solid white;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.menubar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    border-top:solid white;
+    font-size: 14px;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.selected {
+    color:yellow;
+}
+
+.content{
+    margin-top: 50px;
+}
+
+.card{
+    border-bottom: solid gray;
+    border-top: solid gray;
+    font-size: 14px;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.warrior{
+    color:#C69B6D !important;
+}
+.druid{
+    color:#FF7C0A !important;
+}
+.mage{
+    color:#68CCEF !important;
+}
+.hunter{
+    color:#AAD372 !important;
+}
+.priest{
+    color:#FFFFFF !important;
+}
+.rogue{
+    color:#FFF468 !important;
+}
+.shaman{
+    color:#2359FF !important;
+}
+.paladin{
+    color:#F48CBA !important;
+}
+.warlock{
+    color:#9382C9 !important;
+}
+.dk{
+    color:#C41E3B !important;
+}
+.info{
+    color: #888888;
+}
+
+.cardStatus{
+    color: #888888;
+}
+
+.newMember{
+    text-align: center;
+}
+
+.mask{
+    z-index: 200;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+
+.popup{
+    z-index: 200;
+    position: fixed;
+    left:10%;
+    right:10%;
+    top: 30%;
+    border:white solid;
+    background-color: black;
+}
+
+.buttonGroup{
+    float: right; 
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: white solid;
+    margin-right:3px;
+}
+
+tbody{
+    width:100%;
+    font-size: 12px;
+    margin-top: 5%;
+}
+td{
+    width:33%;
+}

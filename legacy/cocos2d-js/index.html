@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Cocos2d-JS</title> 
+    <script type="text/javascript" src="cocos2d-js-v3.10.js" charset="UTF-8"></script>
+</head>
+<body>   
+    <!--canvas id="gameCanvas" width="800" height="450"></canvas-->
+    <script type="text/javascript">
+        //create a new canvas, thee width and height will be same with the size of browser.
+        body = document.getElementsByTagName("body")[0];
+        canvas = document.createElement("canvas");
+        canvas.setAttribute("id","gameCanvas");
+        canvas.setAttribute("width",window.innerWidth - 20);
+        canvas.setAttribute("height",window.innerHeight - 20);
+
+        body.appendChild(canvas);
+
+    </script>
+    <script type="text/javascript">
+          window.onload = function(){
+              cc.game.onStart = function(){
+                  //load resources
+                  cc.LoaderScene.preload(["HelloWorld.png"], function () {
+                      var MyScene = cc.Scene.extend({
+                          onEnter:function () {
+                              this._super();
+                              var size = cc.director.getWinSize();
+
+                              //set background
+                              var myBG = cc.Sprite.create("src/black.png");
+                              myBG.setPosition(size.width / 2, size.height / 2);
+                              myBG.setScale(size.width / 5, size.height / 5);
+                              this.addChild(myBG);
+
+                              //top-left cornor
+                              var myMap1 = cc.Sprite.create("src/blue.png");
+                              myMap1.setPosition(size.width * 0.1, size.width * 0.1); //10%, 90%
+                              myMap1.setScale(size.width * 0.05 / 5);
+                              this.addChild(myMap1);
+                              var myMap2 = cc.Sprite.create("src/orange.png");
+                              myMap2.setPosition(size.width * 0.1, size.width * 0.15); //10%, 90%
+                              myMap2.setScale(size.width * 0.05 / 5);
+                              this.addChild(myMap2);
+                              var myMap3 = cc.Sprite.create("src/green.png");
+                              myMap3.setPosition(size.width * 0.1, size.width * 0.2); //10%, 90%
+                              myMap3.setScale(size.width * 0.05 / 5);
+                              this.addChild(myMap3);
+                              var myMap4 = cc.Sprite.create("src/red.png");
+                              myMap4.setPosition(size.width * 0.1, size.width * 0.25); //10%, 90%
+                              myMap4.setScale(size.width * 0.05 / 5);
+                              this.addChild(myMap4);
+                              var myMap5 = cc.Sprite.create("src/yellow.png");
+                              myMap5.setPosition(size.width * 0.15, size.width * 0.2); //10%, 90%
+                              myMap5.setScale(size.width * 0.05 / 5);
+                              this.addChild(myMap5);
+                              var myMap6 = cc.Sprite.create("src/white.png");
+                              myMap6.setPosition(size.width * 0.05, size.width * 0.2); //10%, 90%
+                              myMap6.setScale(size.width * 0.05 / 5);
+                              this.addChild(myMap6);
+                          }
+                      });
+                      cc.director.runScene(new MyScene());
+                  }, this);
+              };
+              cc.game.run("gameCanvas");
+          };
+    </script>
+</body>
+</html>

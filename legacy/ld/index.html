@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="en-us"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>网页语言翻译测试</title>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">网页语言翻译测试</h1>
+                <p class="lead">此网页提供网页翻译引擎测试的翻译页面</p>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a class="nav-link font-weight-bolder" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">网页标题是中文</a>
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><a id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">网页正文全部是中文</a></li>
+                                        <li class="list-group-item"><a id="v-pills2-tab" data-toggle="pill" href="#v-pills2" role="tab" aria-controls="v-pills2" aria-selected="false">网页正文上半中文、下半英文</a></li>
+                                        <li class="list-group-item"><a id="v-pills3-tab" data-toggle="pill" href="#v-pills3" role="tab" aria-controls="v-pills3" aria-selected="false">网页正文上半英文、下半中文</a></li>
+                                        <li class="list-group-item"><a id="v-pills4-tab" data-toggle="pill" href="#v-pills4" role="tab" aria-controls="v-pills4" aria-selected="false">网页正文一段是中文、一段是英文</a></li>
+                                        <!--li class="list-group-item"><a id="v-pills5-tab" data-toggle="pill" href="#v-pills5" role="tab" aria-controls="v-pills5" aria-selected="false">网页正文，可见部分是中文、不可见部分是英文</a></li-->
+                                        <!--li class="list-group-item"><a id="v-pills6-tab" data-toggle="pill" href="#v-pills6" role="tab" aria-controls="v-pills6" aria-selected="false">网页正文，可见部分是英文、不可见部分是中文</a></li-->
+                                    </ul> 
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link font-weight-bolder" data-toggle="collapse" href="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample1">网页标题是英文</a>
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                    <ul class="list-group">
+                                    <li class="list-group-item"><a id="v-pills7-tab" data-toggle="pill" href="#v-pills7" role="tab" aria-controls="v-pills7" aria-selected="false">网页正文全部是中文</a></li>
+                                    <li class="list-group-item"><a id="v-pills8-tab" data-toggle="pill" href="#v-pills8" role="tab" aria-controls="v-pills8" aria-selected="false">网页正文上半中文、下半英文</a></li>
+                                    <li class="list-group-item"><a id="v-pills9-tab" data-toggle="pill" href="#v-pills9" role="tab" aria-controls="v-pills9" aria-selected="false">网页正文上半英文、下半中文</a></li>
+                                    <li class="list-group-item"><a id="v-pills10-tab" data-toggle="pill" href="#v-pills10" role="tab" aria-controls="#v-pills10" aria-selected="false">网页正文一段是中文、一段是英文</a></li>
+                                    <!--li class="list-group-item"><a id="v-pills11-tab" data-toggle="pill" href="#v-pills11" role="tab" aria-controls="#v-pills11" aria-selected="false">网页正文，可见部分是中文、不可见部分是英文</a></li-->
+                                    <!--li class="list-group-item"><a id="v-pills12-tab" data-toggle="pill" href="#v-pills12" role="tab" aria-controls="#v-pills12" aria-selected="false">网页正文，可见部分是英文、不可见部分是中文</a></li-->
+                                    </ul> 
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link font-weight-bolder" data-toggle="collapse" href="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">其他场景</a>
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                    <ul class="list-group">
+                                    <li class="list-group-item"><a id="v-pills7-tab" data-toggle="pill" href="#v-pills13" role="tab" aria-controls="v-pills7" aria-selected="false">混杂中日英三种语言的网页</a></li>
+                                    <!--li class="list-group-item"><a id="v-pills8-tab" data-toggle="pill" href="#v-pills14" role="tab" aria-controls="v-pills8" aria-selected="false">网页正文上半中文、下半英文</a></li>
+                                    <li class="list-group-item"><a id="v-pills9-tab" data-toggle="pill" href="#v-pills15" role="tab" aria-controls="v-pills9" aria-selected="false">网页正文上半英文、下半中文</a></li>
+                                    <li class="list-group-item"><a id="v-pills10-tab" data-toggle="pill" href="#v-pills16" role="tab" aria-controls="#v-pills10" aria-selected="false">网页正文一段是中文、一段是英文</a></li>
+                                    <!--li class="list-group-item"><a id="v-pills11-tab" data-toggle="pill" href="#v-pills17" role="tab" aria-controls="#v-pills11" aria-selected="false">网页正文，可见部分是中文、不可见部分是英文</a></li-->
+                                    <!--li class="list-group-item"><a id="v-pills12-tab" data-toggle="pill" href="#v-pills18" role="tab" aria-controls="#v-pills12" aria-selected="false">网页正文，可见部分是英文、不可见部分是中文</a></li-->
+                                    </ul> 
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <a class="btn btn-outline-primary float-right" href="1.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="1.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills2" role="tabpanel" aria-labelledby="pills2">
+                            <a class="btn btn-outline-primary float-right" href="2.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="2.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills3" role="tabpanel" aria-labelledby="v-pills3-tab">
+                            <a class="btn btn-outline-primary float-right" href="3.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="3.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills4" role="tabpanel" aria-labelledby="v-pills4-tab">
+                            <a class="btn btn-outline-primary float-right" href="4.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="4.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills5" role="tabpanel" aria-labelledby="v-pills5-tab">
+                            <a class="btn btn-outline-primary float-right" href="5.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="5.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills6" role="tabpanel" aria-labelledby="v-pills6-tab">
+                            <a class="btn btn-outline-primary float-right" href="6.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="6.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills7" role="tabpanel" aria-labelledby="v-pills7-tab">
+                            <a class="btn btn-outline-primary float-right" href="7.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="7.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills8" role="tabpanel" aria-labelledby="v-pills8-tab">
+                            <a class="btn btn-outline-primary float-right" href="8.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="8.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills9" role="tabpanel" aria-labelledby="v-pills9-tab">
+                            <a class="btn btn-outline-primary float-right" href="9.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="9.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills10" role="tabpanel" aria-labelledby="v-pills10-tab">
+                            <a class="btn btn-outline-primary float-right" href="10.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="10.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills11" role="tabpanel" aria-labelledby="v-pills11-tab">
+                            <a class="btn btn-outline-primary float-right" href="11.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="11.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills12" role="tabpanel" aria-labelledby="v-pills12-tab">
+                            <a class="btn btn-outline-primary float-right" href="12.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="12.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills13" role="tabpanel" aria-labelledby="v-pills13-tab">
+                            <a class="btn btn-outline-primary float-right" href="13.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="13.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills14" role="tabpanel" aria-labelledby="v-pills14-tab">
+                            <a class="btn btn-outline-primary float-right" href="14.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="14.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills15" role="tabpanel" aria-labelledby="v-pills15-tab">
+                            <a class="btn btn-outline-primary float-right" href="15.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="15.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills16" role="tabpanel" aria-labelledby="v-pills16-tab">
+                            <a class="btn btn-outline-primary float-right" href="16.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="16.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills17" role="tabpanel" aria-labelledby="v-pills17-tab">
+                            <a class="btn btn-outline-primary float-right" href="17.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="17.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills18" role="tabpanel" aria-labelledby="v-pills18-tab">
+                            <a class="btn btn-outline-primary float-right" href="18.html" target="_blank" role="button">新窗口打开</a>
+                            <iframe class="figure" id="inlineFrameExample" title="Inline Frame Example" src="18.html" height="600em" width="100%" frameborder="0"></iframe>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+
+</body>
+</html>

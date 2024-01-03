@@ -1,0 +1,54 @@
+
+body {
+    font-size: 12px;
+}
+#name {
+    width:50%;
+}
+#number {
+    width: 10%;
+}
+div{
+    margin:10px;
+}
+.image {
+    align-self: center;
+}
+#img1 {
+    width:20px;
+    height: 20px;
+}
+#img2 {
+    width: 100px;
+    height: 100px;
+}
+.description{
+    margin-top:0;
+    align-self: center;
+}
+.img_desc{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.image_new{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.image_bigger_new{
+    width: 41px;
+    height: 41px;
+}
+.image_desc_new{
+    margin:1px;
+}
+
+#materials{
+    background:black;
+}
+
+#buildings{
+    background:black;
+}

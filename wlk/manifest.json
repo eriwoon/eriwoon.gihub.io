@@ -1,0 +1,15 @@
+{
+    "name": "游戏会长",
+    "short_name": "Minimal PWA",
+    "display": "standalone",
+    "start_url": "/",
+    "theme_color": "#8888ff",
+    "background_color": "#aaaaff",
+    "icons": [
+      {
+        "src": "/favicon.ico",
+        "sizes": "64x64",
+        "type": "image/png"
+      }
+    ]
+  }

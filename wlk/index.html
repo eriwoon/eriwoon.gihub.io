@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="zh-cn"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=0">
+        <link rel="stylesheet" href="default.css">
+        <link rel="manifest" href="manifest.json"/>
+        <title>游戏会长</title>
+
+    </head>
+    <body oncontextmenu="return false;" onselectstart="return false">
+        <div id='canvas'></div>
+        <script src="libs/jquery-3.5.1.slim.min.js"></script>
+        <script src="0.common.js"></script>
+        <script src="1-framework.js"></script>
+        <script src="2-guild.js"></script>
+        <script src="2.1.member.js"></script>
+        <script src="2.2.quest.js"></script>
+        <script src="3-shop.js"></script>
+        <script src="4-raid.js"></script>
+        
+        <script src="default.js"></script>
+
+        <script>
+            if (navigator.serviceWorker != null) {
+              navigator.serviceWorker.register('sw.js')
+              .then(function(registration) {
+                console.log('Registered events at scope: ', registration.scope);
+              });
+            }
+          </script>
+    </body>
+
+</html>

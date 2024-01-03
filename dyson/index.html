@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="zh-cn"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=0">
+        <title>Dyson</title>
+        <!--link rel="stylesheet" href="/libs/weui.css"-->
+        <link rel="stylesheet" href="css/default.css">
+        <!--style type="text/css"></style-->
+
+    </head>
+    <body>
+        <table id='materials'></table>
+        <table id='buildings'></table>
+        <input id="name" type="text">
+        <span>X</span>
+        <input id="number" type="number">
+        <button id="search">查询</button>
+        <button id="clear">清空</button>
+
+        <div id='sou'></div>
+        <div id='sources_available'></div>
+        <div id="sources_special"></div>
+        <form id="manufacturer_type" action="" method="get"></form>
+
+        <table>
+            <tr>
+                <th>需要的所有原料</th>
+                <th>需要的所有设备</th>
+            </tr>
+            <tr>
+                <td id="all_sources"></td>
+                <td id="all_manufactures"></td>
+            </tr>
+        </table>
+
+        <table id="new_flow"></table>
+        <table id="debug"></table>
+        
+        <script src="/libs/jquery-3.5.1.min.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/main.js"></script>
+</html>

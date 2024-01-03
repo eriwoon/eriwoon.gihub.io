@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+    a {
+    	font-size: 20px;
+    }
+    img.three{
+    	width: 200px;
+    	height: 130px;
+    }
+
+    div.left{
+    	float:left;
+    }
+    div.right{
+    	float:right;
+    }
+    div.parent{
+    	width: 620px;
+    	height: 200px;
+    }
+	</style>
+  </head>
+  <body>
+  	<button id="button1">打开Json文件</button>
+	<input id="Input1" type="file" style="display: none;" />
+  	<script type="text/javascript">
+  	  console.log("hello world!");
+  	  var decode = function(jlist){
+  	  	jlist.forEach(function(element){
+  	  	  console.log('<a href="' + element.url + '">' + element.title + '</a>')
+  	  	  console.log($("#stream"))
+  	  	  if(element.image_urls[2]){
+	  	    $("#stream").append('\
+	  	      <div class="parent">\
+	  	        <div><a href="' + element.url + '">' + element.title + '</a></div>\
+	  	  	  	<div>\
+	  	  	  	<img class="three" src="' + element.image_urls[0] + '">\
+	  	  	  	<img class="three" src="' + element.image_urls[1] + '">\
+	  	  	  	<img class="three" src="' + element.image_urls[2] + '">\
+	  	  	  	</div>\
+	  	  	  	<div><p></div>\
+	  	  	  </div>\
+	  	  	  ');}
+	  	  else if(element.image_urls[1]){
+	  	    $("#stream").append('\
+	  	      <div class="parent">\
+	  	        <div><a href="' + element.url + '">' + element.title + '</a></div>\
+	  	  	  	<div>\
+	  	  	  	<img class="three" src="' + element.image_urls[0] + '">\
+	  	  	  	<img class="three" src="' + element.image_urls[1] + '">\
+	  	  	  	</div>\
+	  	  	  	<div><p></div>\
+	  	  	  </div>\
+	  	  	  ');}
+	  	  else{
+	  	    $("#stream").append('\
+	  	      <div>\
+	  	        <div><a href="' + element.url + '">' + element.title + '</a></div>\
+	  	  	  	<div">\
+	  	  	  	<img class="one" src="' + element.image_urls[0] + '">\
+	  	  	  	</div>\
+	  	  	  	<div><p></div>\
+	  	  	  </div>\
+	  	  	  ');}
+  	  	})
+  	  }
+  	  $('#button1').on('click', function() {
+  	  	$('#Input1').trigger('click');
+  	  });
+  	  $("#Input1").change(function(e){
+  	  	$("#stream").empty();
+  	  	console.log(e.target.files)
+  	  	var reader = new FileReader()
+  	  	reader.onload = function(e){
+  	  		var j = JSON.parse(e.target.result).result;
+  	  		console.log(j)
+  	  		decode(j)
+  	  	}
+  	  	reader.readAsText(e.target.files[0])
+  	  });
+  	</script>
+  	<div id="stream"></div>
+
+  </body>
+</html>
